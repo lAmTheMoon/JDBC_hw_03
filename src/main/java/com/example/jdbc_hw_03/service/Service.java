@@ -2,11 +2,10 @@ package com.example.jdbc_hw_03.service;
 
 import com.example.jdbc_hw_03.repository.Repository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@Component
+@org.springframework.stereotype.Service
 @RequiredArgsConstructor
 public class Service {
 
