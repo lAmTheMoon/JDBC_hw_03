@@ -10,8 +10,8 @@ CREATE TABLE CUSTOMERS
 CREATE TABLE ORDERS
 (
     id           integer auto_increment primary key,
-    date         datetime,
-    customer_id integer references customers (id),
+    date         timestamp    not null default now(),
+    customer_id  integer references customers (id),
     product_name varchar(255) not null,
     amount       integer      not null
 );
